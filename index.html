@@ -17,7 +17,21 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <section class="container">
+        <ul>
+          <li class="" v-for="(disco, index) in dischi">
+            <div class="album-card">
+              <img :src="disco.poster" :alt="disco.author" />
+              <h3>{{disco.title}}</h3>
+              <h4>{{disco.author}}</h4>
+              <h4>{{disco.year}}</h4>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
     <script src="js/main.js"></script>
   </body>
 </html>
