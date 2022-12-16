@@ -1,7 +1,30 @@
+header {
+  height: 150px;
+  background-color: black;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  height: 100px;
+}
+.album-card {
+  padding: 40px;
+  height: 350px;
+  background-color: bisque;
+  margin: 15px;
+}
 .album-card img {
   width: 150px;
 }
 
+.album-text {
+  margin-top: 20px;
+}
+
 li {
   list-style: none;
+  width: 33%;
+  text-align: center;
 }

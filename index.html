@@ -18,14 +18,25 @@
   </head>
   <body>
     <div id="app">
+      <header>
+        <div>
+          <img src="./logo.svg" alt="spotify-logo" />
+        </div>
+      </header>
       <section class="container">
-        <ul>
+        <ul class="d-flex flex-wrap">
           <li class="" v-for="(disco, index) in dischi">
             <div class="album-card">
-              <img :src="disco.poster" :alt="disco.author" />
-              <h3>{{disco.title}}</h3>
-              <h4>{{disco.author}}</h4>
-              <h4>{{disco.year}}</h4>
+              <img
+                
+                :src="disco.poster"
+                :alt="disco.author"
+              />
+              <div class="album-text">
+              <h4 class="">{{disco.title}}</h3>
+              <h5>{{disco.author}}</h4>
+              <h5>{{disco.year}}</h4>
+              </div>
             </div>
           </li>
         </ul>
